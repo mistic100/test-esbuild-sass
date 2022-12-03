@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/index.ts"],
+  "sourcesContent": ["export const FOO = 'FOO';\r\n\r\nimport './index.scss';\r\n"],
+  "mappings": ";;AAAO,MAAM,MAAM;",
+  "names": []
+}
