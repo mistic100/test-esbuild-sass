@@ -1,3 +1,5 @@
+const watch = process.argv[2] === '--watch';
+
 require('esbuild').build({
     entryPoints: ['src/index.ts'],
     bundle: true,
@@ -5,5 +7,6 @@ require('esbuild').build({
     sourcemap: true,
     plugins: [
         require('esbuild-sass-plugin').sassPlugin(),
-    ]
+    ],
+    watch: watch,
 }).catch(() => process.exit(1));

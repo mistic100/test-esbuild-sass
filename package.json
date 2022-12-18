@@ -5,13 +5,15 @@
   "author": "mistic100",
   "license": "MIT",
   "dependencies": {
-    "esbuild-sass-plugin": "^2.4.2",
+    "esbuild-sass-plugin": "^2.4.4",
     "postcss": "^8.4.19",
     "sass": "^1.56.1",
     "tsup": "^6.5.0"
   },
   "scripts": {
-    "build:tsup": "yarn tsup",
-    "build:esbuild": "node ./esbuild.js"
+    "build:tsup": "tsup",
+    "watch:tsup": "tsup --watch",
+    "build:esbuild": "node ./esbuild.js",
+    "watch:esbuild": "node ./esbuild.js --watch"
   }
 }
